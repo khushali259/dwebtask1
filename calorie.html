@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calorie calculator</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="calorie.css" />
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="heading">THE CALORIE TRACKER</div>
+
+	<form>
+	 
+    <label>Female:
+      <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+    </label>
+    <label>Male:
+      <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+    </label>
+    <label>Age:
+      <input id="age" type="number" oninput="calsPerDay()">
+      (in years)
+    </label>
+    <label>Height:
+      <input id="height" type="number" oninput="calsPerDay()" >
+      (in cm)
+    </label>
+    <label>Weight:
+      <input id="weight" type="number" oninput="calsPerDay()">
+      (in kgs)
+    </label>
+</form>
+    
+  	<table style="width:50%">
+  		<th> CHOSE ACTIVITY LEVEL AS PER DISCRIPTION</th>
+  <tr>
+  	<td>
+    (Very Light)-Typical office job(sitting,studying,little walking throughout the day)
+</td>
+  </tr>
+  <tr>
+  	<td>
+    (Light)-Any job where you mostly stand or walk(teaching,shop/lab work,some walking throughout the day)
+  </td>
+</tr>
+  <tr><td>
+    (Moderate)-Jobs requiring physical activity (landscaping,cleaning,maintenance,jobbing/biking/working out for 2 hours/day)
+  </td>
+</tr>
+  <tr><td>
+  	(Heavy)-Heavy manual labour(construction ,dancer ,athlete,hard physical activity min. 4 hour/day 
+  </td>
+</tr>
+  <tr><td>
+  	(Very Heavy)-Moderate to hard physical activity min. 8 hours/day
+  </td>
+</tr>
+
+</table>
+<form>
+<div id="drop">
+  	<select id="exercise">
+  		<option value="1">Very Light</option>
+  		<option value="2">Light</option>
+  		<option value="3">Moderate</option>
+  		<option value="4">Heavy</option>
+  		<option value="5">Very Heavy</option>
+
+  	</select>
+  	<br>
+  	<br>
+
+  	<button type="button" id="calculate">
+     CALCULATE
+  	</button>
+   	<p id="calorie">Basal Metabolic Rate:<span id="totalCals"></span><br>
+   		Net Calorie Requirement:<span id="netCals"></span></p><br></div></form>
+   		
+   	<form>
+   	<div id="dynamic">
+   		<h3>ENTER ITEMS CONSUMED IN A DAY</h3>
+
+
+      <input type="text" placeholder="Enter items consumed in the day" id="memo" required />
+      <input type="number" placeholder="Fats content" id="fats" required/>
+      <input type="number" placeholder="Carbs content" id="carbs" required/>
+      <input type="number" placeholder="Proteins content" id="proteins" required/><br><br>
+      <button type="button" id="add">ADD ITEM</button>
+    
+    <div>
+    	<div id="mem">
+    		<ol id="notes"></ol>
+    	</div>
+    	<div id="mem">
+    		<ol id="fat"></ol>
+    	</div>
+    	<div id="mem">
+    		<ol id="carb"></ol>
+    	</div>
+    	<div id="mem">
+    		<ol id="protein"></ol>
+    	</div>
+    </div>
+    <br>
+    <br>
+
+    <button id="test" type="button">COMPARE WITH MINIMUM REQUIREMENTS</button>
+    <p id="message"></p>
+    </div></form>
+<script type="text/javascript" src="calorie.js"></script>
+</body>
+</html>

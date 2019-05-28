@@ -1,0 +1,122 @@
+html {
+  background-image: url(http://getdrawings.com/vectors/vegetables-background-vector-2.jpg);
+  background-size: contain;
+  
+}
+label {
+      display: block;
+      box-shadow: 0.1em 0.1em 0.2em #888;
+      background-color: #FDFF6A;
+      border-radius: 1ex;
+      padding: 1ex 1em;
+    
+      margin-bottom: 5px;
+    }
+    input[type=number] {
+      text-align: right;
+      border: none;
+    }
+    input {
+      float: right;
+    }
+    span {
+      font-weight: bold;
+    }
+th{
+  height: 40px;
+  color:white;
+  font-size: 20px;
+}
+ td {
+  border: 1px solid black;
+  background-color:#FFD063; 
+  height: 50px;
+  text-align: center;
+  font-family: 'Kalam', cursive;
+  
+}
+
+table{
+  border:1px solid black;
+  margin-left: 300px;
+  background-color: black;
+
+}
+#memo {
+  
+  width: 200px;
+  height:30px;
+  position: relative;
+  float:left;
+  margin-left: 30px;
+}
+#fats {
+ 
+  float: left;
+  width: 100px;
+  height:30px;
+  text-align: center;
+  margin-left: 10px
+}
+#carbs{
+  
+  float:left;
+  
+  width: 100px;
+  height:30px;
+  text-align: center;
+   margin-left: 10px
+}
+#proteins {
+ 
+  float: left;
+  width: 100px;
+  height:30px;
+  text-align: center;
+ margin-left: 10px
+}
+
+#mem {
+  position: relative;
+ float:left;
+}
+#heading {
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+}
+form {
+  background-color: black;
+  width:49%;
+  margin-left: 300px;
+  padding:5px;
+}
+#drop{
+  
+  background-color: #FFA8A8;
+  height:50%;
+  font-family: 'Signika Negative', sans-serif;
+}
+#exercise{
+  margin-left: 250px;
+  margin-top:30px;
+  width: 125px;
+}
+#calculate{
+  margin-left: 250px;
+  width:125px;
+}
+#calorie{
+  margin-left: 200px;
+}
+#dynamic{
+  background-color: #B1FF63;
+  padding: 10px;
+}
+#add{
+  margin-left: 250px;
+  width:125px;
+}
+h3{
+  margin-left: 120px;
+}
